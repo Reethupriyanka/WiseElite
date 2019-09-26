@@ -1,0 +1,10 @@
+def multiples_with_same_digits():
+  i= 1000000
+  flag = True
+  while(flag):
+    if [int(d) for d in str(i)] == [int(d) for d in str(2*i)] == [int(d) for d in str(3*i)] == [int(d) for d in str(4*i)] == [int(d) for d in str(5*i)] ==[int(d) for d in str(6*i)] :
+      print(i) 
+      flag = False
+    else : 
+      i =i+1
+multiples_with_same_digits()
