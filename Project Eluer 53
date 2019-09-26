@@ -1,0 +1,13 @@
+import math
+def combinations(n,r):
+  ncr = math.factorial(n)/(math.factorial(n-r)*math.factorial(r))
+  return ncr
+  
+def values_greaterthan_onemillion():
+  count = 0
+  for n in range(101):
+    for r in range(n+1):
+      if(combinations(n,r) > 1000000):
+        count = count +1
+  return count
+values_greaterthan_onemillion()
